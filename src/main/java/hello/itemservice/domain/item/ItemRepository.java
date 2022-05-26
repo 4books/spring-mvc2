@@ -27,11 +27,18 @@ public class ItemRepository {
         return new ArrayList<>(store.values());
     }
 
-    public void update(Long itemId, updateParamDTO updateParam){
+//    public void update(Long itemId, updateParamDTO updateParam){
+//        Item findItem = findById(itemId);
+//        findItem.setItemName(updateParam.getItemName());
+//        findItem.setPrice(updateParam.getPrice());
+//        findItem.setQuantity(updateParam.getQuantity());
+//    }
+
+    public void update(Long itemId, Item item){
         Item findItem = findById(itemId);
-        findItem.setItemName(updateParam.getItemName());
-        findItem.setPrice(updateParam.getPrice());
-        findItem.setQuantity(updateParam.getQuantity());
+        findItem.setItemName(item.getItemName());
+        findItem.setPrice(item.getPrice());
+        findItem.setQuantity(item.getQuantity());
     }
 
     public void delete(Long itemId) {
