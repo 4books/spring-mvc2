@@ -1,6 +1,5 @@
 package hello.itemservice.domain.item;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class ItemRepositoryTest {
 
@@ -59,7 +57,7 @@ class ItemRepositoryTest {
         Long id = saveItem.getId();
 
         //when
-        updateParamDTO dto = new updateParamDTO("itemB", 30000, 30);
+        UpdateParamDTO dto = new UpdateParamDTO("itemB", 30000, 30);
         itemRepository.update(id, dto);
 
         //then

@@ -5,16 +5,16 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class updateParamDTO {
+public class UpdateParamDTO {
 
     private String itemName;
     private Integer price;
     private Integer quantity;
 
-    public updateParamDTO() {
+    public UpdateParamDTO() {
     }
 
-    public updateParamDTO(String itemName, Integer price, Integer quantity) {
+    public UpdateParamDTO(String itemName, Integer price, Integer quantity) {
         this.itemName = itemName;
         this.price = price;
         this.quantity = quantity;
